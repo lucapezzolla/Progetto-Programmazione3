@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Squaremaze';
+    src: url('@../../../fonts/Squaremaze.ttf');
+}
+
+.text {
+    -fx-font-family: "Squaremaze";
+}

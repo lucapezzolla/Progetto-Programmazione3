@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<?import java.util.ArrayList?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="punteggio" layoutX="14.0" layoutY="28.0" style="-fx-font-size: 30;" stylesheets="@../../../Style/font.css" text="Steps: 0">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+      </Label>
+      <Pane layoutX="-5.0" layoutY="103.0" prefHeight="794.0" prefWidth="1800.0" style="-fx-background-color: grey;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="105.0">
+         <children>
+            <ImageView fitHeight="1090.0" fitWidth="1930.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/backgroundLab.jpg" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="1056.0" layoutY="224.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle1" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="756.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="1006.0" layoutY="224.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="1106.0" layoutY="224.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="1156.0" layoutY="224.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="1156.0" layoutY="674.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="1106.0" layoutY="674.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="1056.0" layoutY="674.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="1006.0" layoutY="674.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="956.0" layoutY="224.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="756.0" layoutY="224.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="706.0" layoutY="224.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="806.0" layoutY="224.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="856.0" layoutY="224.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="906.0" layoutY="224.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="706.0" layoutY="474.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="706.0" layoutY="424.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="706.0" layoutY="374.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="706.0" layoutY="324.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="706.0" layoutY="274.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="706.0" layoutY="624.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="706.0" layoutY="574.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="706.0" layoutY="524.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="706.0" layoutY="674.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="956.0" layoutY="674.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="906.0" layoutY="674.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="856.0" layoutY="674.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="806.0" layoutY="674.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="756.0" layoutY="674.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="1156.0" layoutY="474.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="1156.0" layoutY="424.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="1156.0" layoutY="374.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="1156.0" layoutY="324.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="1156.0" layoutY="624.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="1156.0" layoutY="574.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="1156.0" layoutY="524.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="1156.0" layoutY="274.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle2" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="806.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle3" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="856.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle4" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="906.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle5" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="956.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle6" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="1006.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle7" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="1056.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle8" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="1106.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle11" arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="856.0" layoutY="324.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle12" arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="906.0" layoutY="324.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle19" arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="856.0" layoutY="374.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle20" arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="906.0" layoutY="374.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle42" arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="806.0" layoutY="524.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle37" arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="956.0" layoutY="474.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle38" arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="1006.0" layoutY="474.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle45" arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="956.0" layoutY="524.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle46" arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="1006.0" layoutY="524.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle16" arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="1106.0" layoutY="324.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle60" arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="906.0" layoutY="624.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle9" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="756.0" layoutY="324.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle10" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="806.0" layoutY="324.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle17" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="756.0" layoutY="374.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle18" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="806.0" layoutY="374.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle25" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="756.0" layoutY="424.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle26" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="806.0" layoutY="424.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle33" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="756.0" layoutY="474.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle34" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="806.0" layoutY="474.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle41" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="756.0" layoutY="524.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle49" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="756.0" layoutY="574.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle57" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="756.0" layoutY="624.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle58" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="806.0" layoutY="624.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle50" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="806.0" layoutY="574.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle51" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="856.0" layoutY="574.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle52" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="906.0" layoutY="574.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle53" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="956.0" layoutY="574.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle54" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="1006.0" layoutY="574.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle55" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="1056.0" layoutY="574.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle56" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="1106.0" layoutY="574.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle43" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="856.0" layoutY="524.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle44" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="906.0" layoutY="524.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle35" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="856.0" layoutY="474.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle36" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="906.0" layoutY="474.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle27" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="856.0" layoutY="424.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle28" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="906.0" layoutY="424.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle13" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="956.0" layoutY="324.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle14" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="1006.0" layoutY="324.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle21" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="956.0" layoutY="374.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle22" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="1006.0" layoutY="374.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle29" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="956.0" layoutY="424.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle30" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="1006.0" layoutY="424.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle31" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="1056.0" layoutY="424.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle61" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="956.0" layoutY="624.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle62" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="1006.0" layoutY="624.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle63" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="1056.0" layoutY="624.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle64" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="1106.0" layoutY="624.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle59" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="856.0" layoutY="624.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle40" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="1106.0" layoutY="474.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle48" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="1106.0" layoutY="524.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle24" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="1106.0" layoutY="374.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle23" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="1056.0" layoutY="374.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle15" arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="1056.0" layoutY="324.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle32" arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="1106.0" layoutY="424.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle39" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="1056.0" layoutY="474.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle47" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="1056.0" layoutY="524.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+
+            <Label fx:id="labelGameOver" layoutX="714.0" layoutY="80.0" text="GAME OVER" textAlignment="CENTER" visible="false">
+               <font>
+                  <Font name="Arial Black" size="72.0" />
+               </font>
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@../../../image/gameOverLabel.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Label>
+            <Button fx:id="playBTN" layoutX="922.0" layoutY="765.0" mnemonicParsing="false" onAction="#onPlayButton" style="-fx-cursor: hand;" text="⏵" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Black" size="48.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+               </padding>
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@../../../image/playButtonGame.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Button>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="1106.0" layoutY="624.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/goal.png" />
+               </image>
+            </ImageView>
+            <Rectangle fx:id="robot" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="756.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="50.0">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@../../../image/robot.png" />
+                     </source>
+                  </ImageInput>
+               </effect></Rectangle>
+            <TableView fx:id="tableFScore" layoutX="1431.0" layoutY="255.0" prefHeight="304.0" prefWidth="215.0" stylesheets="@../../../Style/tableView.css" visible="false">
+               <columns>
+                  <TableColumn fx:id="playerCol" prefWidth="128.0" text="Player" />
+                  <TableColumn fx:id="ptCol" prefWidth="78.0" text="PT" />
+               </columns>
+            </TableView>
+         </children>
+
+         <fx:define>
+            <ArrayList fx:id="matrix">
+               <fx:reference source="Rectangle1" />
+               <fx:reference source="Rectangle2" />
+               <fx:reference source="Rectangle3" />
+               <fx:reference source="Rectangle4" />
+               <fx:reference source="Rectangle5" />
+               <fx:reference source="Rectangle6" />
+               <fx:reference source="Rectangle7" />
+               <fx:reference source="Rectangle8" />
+               <fx:reference source="Rectangle9" />
+               <fx:reference source="Rectangle10" />
+               <fx:reference source="Rectangle11" />
+               <fx:reference source="Rectangle12" />
+               <fx:reference source="Rectangle13" />
+               <fx:reference source="Rectangle14" />
+               <fx:reference source="Rectangle15" />
+               <fx:reference source="Rectangle16" />
+               <fx:reference source="Rectangle17" />
+               <fx:reference source="Rectangle18" />
+               <fx:reference source="Rectangle19" />
+               <fx:reference source="Rectangle20" />
+               <fx:reference source="Rectangle21" />
+               <fx:reference source="Rectangle22" />
+               <fx:reference source="Rectangle23" />
+               <fx:reference source="Rectangle24" />
+               <fx:reference source="Rectangle25" />
+               <fx:reference source="Rectangle26" />
+               <fx:reference source="Rectangle27" />
+               <fx:reference source="Rectangle28" />
+               <fx:reference source="Rectangle29" />
+               <fx:reference source="Rectangle30" />
+               <fx:reference source="Rectangle31" />
+               <fx:reference source="Rectangle32" />
+               <fx:reference source="Rectangle33" />
+               <fx:reference source="Rectangle34" />
+               <fx:reference source="Rectangle35" />
+               <fx:reference source="Rectangle36" />
+               <fx:reference source="Rectangle37" />
+               <fx:reference source="Rectangle38" />
+               <fx:reference source="Rectangle39" />
+               <fx:reference source="Rectangle40" />
+               <fx:reference source="Rectangle41" />
+               <fx:reference source="Rectangle42" />
+               <fx:reference source="Rectangle43" />
+               <fx:reference source="Rectangle44" />
+               <fx:reference source="Rectangle45" />
+               <fx:reference source="Rectangle46" />
+               <fx:reference source="Rectangle47" />
+               <fx:reference source="Rectangle48" />
+               <fx:reference source="Rectangle49" />
+               <fx:reference source="Rectangle50" />
+               <fx:reference source="Rectangle51" />
+               <fx:reference source="Rectangle52" />
+               <fx:reference source="Rectangle53" />
+               <fx:reference source="Rectangle54" />
+               <fx:reference source="Rectangle55" />
+               <fx:reference source="Rectangle56" />
+               <fx:reference source="Rectangle57" />
+               <fx:reference source="Rectangle58" />
+               <fx:reference source="Rectangle59" />
+               <fx:reference source="Rectangle60" />
+               <fx:reference source="Rectangle61" />
+               <fx:reference source="Rectangle62" />
+               <fx:reference source="Rectangle63" />
+               <fx:reference source="Rectangle64" />
+            </ArrayList>
+         </fx:define>
+      </Pane>
+      <Label fx:id="LabelNome" alignment="CENTER" layoutX="295.0" layoutY="2.0" prefHeight="106.0" prefWidth="404.0" style="-fx-font-size: 30;" stylesheets="@../../../Style/font.css" text="Label">
+         <font>
+            <Font name="Arial Black" size="36.0" />
+         </font></Label>
+ 	  <Button fx:id="continueBTN" layoutX="835.0" layoutY="15.0" mnemonicParsing="false" onAction="#onContinueButton" stylesheets="@../../../Style/continueButton.css" text="CONTINUE" visible="false">
+         <font>
+            <Font name="Arial Black" size="36.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelRobotState" layoutX="1322.0" layoutY="28.0" style="-fx-font-size: 30;" stylesheets="@../../../Style/font.css" text="Robot state: NULL" AnchorPane.rightAnchor="20.0">
+         <font>
+            <Font name="Arial Black" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

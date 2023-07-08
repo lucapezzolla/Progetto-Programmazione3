@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<?import java.util.ArrayList?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="punteggio" layoutX="14.0" layoutY="28.0" prefHeight="50.0" prefWidth="294.0" style="-fx-font-size: 30;" stylesheets="@../../../Style/font.css" text="Steps:">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+      </Label>
+      <Pane layoutX="-5.0" layoutY="103.0" prefHeight="794.0" prefWidth="1800.0" style="-fx-background-color: grey;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="105.0">
+         <children>
+            <ImageView fitHeight="1090.0" fitWidth="1930.0" layoutX="4.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../image/backgroundLab.jpg" />
+               </image>
+            </ImageView>
+            <Rectangle fx:id="Rectangle16" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="997.0" layoutY="457.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle2" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="897.0" layoutY="307.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle5" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="847.0" layoutY="357.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle11" arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="947.0" layoutY="407.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle6" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="897.0" layoutY="357.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle7" arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="947.0" layoutY="357.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle8" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="997.0" layoutY="357.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle12" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="997.0" layoutY="407.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle15" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="947.0" layoutY="457.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle14" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="897.0" layoutY="457.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle10" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="897.0" layoutY="407.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle9" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="847.0" layoutY="407.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle13" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="847.0" layoutY="457.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="897.0" layoutY="260.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle1" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="847.0" layoutY="307.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle3" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="947.0" layoutY="307.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Rectangle4" arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="997.0" layoutY="307.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="847.0" layoutY="260.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="947.0" layoutY="260.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="997.0" layoutY="260.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="1047.0" layoutY="260.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="1047.0" layoutY="308.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="1047.0" layoutY="357.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="1047.0" layoutY="407.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="1047.0" layoutY="457.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="1047.0" layoutY="507.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8d8d8d" height="50.0" layoutX="997.0" layoutY="507.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="947.0" layoutY="507.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="897.0" layoutY="507.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="848.0" layoutY="507.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="798.0" layoutY="507.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="798.0" layoutY="457.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="798.0" layoutY="407.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="798.0" layoutY="357.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="798.0" layoutY="308.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="798.0" layoutY="260.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+
+            <Label fx:id="labelGameOver" layoutX="705.0" layoutY="80.0" prefHeight="78.0" prefWidth="484.0" text="GAME OVER" textAlignment="CENTER" visible="false">
+               <font>
+                  <Font name="Arial Black" size="72.0" />
+               </font>
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@../../../image/gameOverLabel.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Label>
+            <Button fx:id="playBTN" layoutX="910.0" layoutY="595.0" mnemonicParsing="false" onAction="#onPlayButton" prefHeight="64.0" prefWidth="75.0" style="-fx-cursor: hand;" text="⏵" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Black" size="48.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+               </padding>
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@../../../image/playButtonGame.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Button>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="997.0" layoutY="457.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/goal.png" />
+               </image>
+            </ImageView>
+            <Rectangle fx:id="robot" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="848.0" layoutY="308.0" stroke="BLACK" strokeType="INSIDE" width="50.0">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@../../../image/robot.png" />
+                     </source>
+                  </ImageInput>
+               </effect></Rectangle>
+            <TableView fx:id="tableFScore" layoutX="1431.0" layoutY="255.0" prefHeight="304.0" prefWidth="215.0" stylesheets="@../../../Style/tableView.css" visible="false">
+               <columns>
+                  <TableColumn fx:id="playerCol" prefWidth="128.0" text="Player" />
+                  <TableColumn fx:id="ptCol" prefWidth="78.0" text="PT" />
+               </columns>
+            </TableView>
+         </children>
+
+         <fx:define>
+            <ArrayList fx:id="matrix">
+               <fx:reference source="Rectangle1" />
+               <fx:reference source="Rectangle2" />
+               <fx:reference source="Rectangle3" />
+               <fx:reference source="Rectangle4" />
+               <fx:reference source="Rectangle5" />
+               <fx:reference source="Rectangle6" />
+               <fx:reference source="Rectangle7" />
+               <fx:reference source="Rectangle8" />
+               <fx:reference source="Rectangle9" />
+               <fx:reference source="Rectangle10" />
+               <fx:reference source="Rectangle11" />
+               <fx:reference source="Rectangle12" />
+               <fx:reference source="Rectangle13" />
+               <fx:reference source="Rectangle14" />
+               <fx:reference source="Rectangle15" />
+               <fx:reference source="Rectangle16" />
+            </ArrayList>
+         </fx:define>
+      </Pane>
+      <Label fx:id="LabelNome" alignment="CENTER" layoutX="295.0" layoutY="3.0" prefHeight="106.0" prefWidth="408.0" style="-fx-font-size: 36;" stylesheets="@../../../Style/font.css" text="Name">
+         <font>
+            <Font name="Arial Black" size="36.0" />
+         </font></Label>
+      <Button fx:id="continueBTN" layoutX="819.0" layoutY="17.0" mnemonicParsing="false" onAction="#onContinueButton" stylesheets="@../../../Style/continueButton.css" text="CONTINUE" visible="false">
+         <font>
+            <Font name="Arial Black" size="36.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelRobotState" layoutX="1322.0" layoutY="28.0" style="-fx-font-size: 36;" stylesheets="@../../../Style/font.css" text="Robot state: Pursuit" AnchorPane.rightAnchor="20.0">
+         <font>
+            <Font name="Arial Black" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

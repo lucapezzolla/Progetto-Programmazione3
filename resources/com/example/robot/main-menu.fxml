@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="1040.0" maxWidth="1880.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.robot.HelloApplication">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../../image/background2.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="helpBTN" layoutX="541.0" layoutY="270.0" mnemonicParsing="false" onAction="#onHelpButton" prefHeight="77.0" prefWidth="200.0" style="-fx-cursor: hand;" text="Help" AnchorPane.bottomAnchor="483.0" AnchorPane.leftAnchor="540.0" AnchorPane.rightAnchor="540.0" AnchorPane.topAnchor="270.0">
+         <font>
+            <Font size="28.0" />
+         </font>
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../../../image/HelpButton.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="exitBTN" layoutX="540.0" layoutY="380.0" mnemonicParsing="false" onAction="#exit" prefHeight="77.0" prefWidth="200.0" style="-fx-cursor: hand;" text="Quit" AnchorPane.bottomAnchor="483.0" AnchorPane.leftAnchor="540.0" AnchorPane.rightAnchor="540.0" AnchorPane.topAnchor="380.0">
+         <font>
+            <Font size="28.0" />
+         </font>
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../../../image/QuitButton.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="playBTN" alignment="CENTER" contentDisplay="CENTER" layoutX="540.0" layoutY="160.0" mnemonicParsing="false" onAction="#playScene" prefHeight="77.0" prefWidth="200.0" style="-fx-cursor: hand;" text="Play" textAlignment="CENTER" AnchorPane.bottomAnchor="483.0" AnchorPane.leftAnchor="540.0" AnchorPane.rightAnchor="540.0" AnchorPane.topAnchor="160.0">
+         <font>
+            <Font size="28.0" />
+         </font>
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../../../image/PlayButton.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="400.0" layoutX="449.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="598.1111145019531" AnchorPane.leftAnchor="449.0" AnchorPane.rightAnchor="431.0" AnchorPane.topAnchor="33.0">
+         <image>
+            <Image url="@../../../image/Titolo.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="rulesPane" layoutX="22.0" layoutY="162.0" prefHeight="546.0" prefWidth="1240.0" stylesheets="@../../../Style/font.css" visible="false">
+         <children>
+            <Text fill="#00eb00" layoutY="92.0" stroke="#b400c4" strokeType="OUTSIDE" style="-fx-font-family: Squaremaze; -fx-font-size: 34;" text="This is Robomaze">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Text>
+            <TextArea editable="false" layoutX="-5.0" layoutY="107.0" mouseTransparent="true" pickOnBounds="false" prefHeight="440.0" prefWidth="1216.0" style="-fx-font-family: Squaremaze; -fx-text-fill: #00eb00; -fx-font-size: 28;" stylesheets="@../../../Style/rulesTextArea.css" text="There are three level of difficulties&#10;&#10;The robot can be in 4 different states:&#10;- Pursuit and seek,  moves in the direction of the exit by one step at time&#10;- flee, moves in the direction of the exit by two steps at time&#10;-Evade, moves in a random direction&#10;&#10;The game ends when your robot has reached the exit of the labirinth&#10;&#10;">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DISAPPEAR" />
+               </cursor>
+            </TextArea>
+            <Label layoutY="-24.0" prefHeight="77.0" prefWidth="225.0" text="RULES">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@../../../image/rulesLabel.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="playMainMenu" layoutX="14.0" layoutY="14.0" prefHeight="700.0" prefWidth="1260.0" visible="false">
+         <children>
+            <Button fx:id="easyBTN" disable="true" layoutX="144.0" layoutY="370.0" mnemonicParsing="false" onAction="#easyPlay" prefHeight="25.0" prefWidth="174.0" style="-fx-cursor: hand;" text="Easy">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@../../../image/EasyButton.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Button>
+            <Button fx:id="mediumBTN" disable="true" layoutX="145.0" layoutY="470.0" mnemonicParsing="false" onAction="#mediumPlay" prefHeight="46.0" prefWidth="174.0" style="-fx-cursor: hand;" text="Medium">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@../../../image/MediumButton.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Button>
+            <Button fx:id="hardBTN" disable="true" layoutX="145.0" layoutY="570.0" mnemonicParsing="false" onAction="#hardPlay" prefHeight="77.0" prefWidth="174.0" style="-fx-cursor: hand;" text="Hard">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@../../../image/HardButton.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Button>
+            <TextField fx:id="name" layoutX="62.0" layoutY="253.0" onKeyTyped="#controllerText1" />
+            <TextField fx:id="lastName" layoutX="267.0" layoutY="253.0" onKeyTyped="#controllerText2" />
+            <Label fx:id="Label1" alignment="CENTER" layoutX="80.0" layoutY="204.0" prefHeight="39.0" prefWidth="112.0" text="Nome">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@../../../image/NameLabel.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Label>
+            <Label fx:id="Label2" alignment="CENTER" layoutX="238.0" layoutY="204.0" prefHeight="39.0" prefWidth="207.0" text="Cognome">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@../../../image/LastNameLabel.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Label>
+            <Label fx:id="labelEasy" layoutX="597.0" layoutY="321.0" prefHeight="58.0" prefWidth="157.0" text="Easy">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@../../../image/EasyLabel.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Label>
+            <Label fx:id="labelMed" layoutX="823.0" layoutY="321.0" prefHeight="58.0" prefWidth="135.0" text="Medium">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@../../../image/MediumLabel.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Label>
+            <Label fx:id="labelHard" layoutX="1051.0" layoutY="321.0" prefHeight="58.0" prefWidth="118.0" text="Hard">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@../../../image/HardLabel.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Label>
+            <Label fx:id="leaderboard" layoutX="753.0" layoutY="195.0" prefHeight="58.0" prefWidth="274.0" text="Leaderboard">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@../../../image/TopScoresLabel.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Label>
+            <TableView fx:id="tableEasy" fixedCellSize="25.0" layoutX="585.0" layoutY="385.0" prefHeight="304.0" prefWidth="215.0" stylesheets="@../../../Style/tableView.css">
+              <columns>
+                <TableColumn fx:id="playerEasy" prefWidth="128.0" text="Player" />
+                <TableColumn fx:id="ptEasy" prefWidth="78.0" text="PT" />
+              </columns>
+            </TableView>
+            <TableView fx:id="tableHard" fixedCellSize="25.0" layoutX="1038.0" layoutY="385.0" prefHeight="304.0" prefWidth="215.0" stylesheets="@../../../Style/tableView.css">
+               <columns>
+                  <TableColumn fx:id="playerHard" prefWidth="128.0" text="Player" />
+                  <TableColumn fx:id="ptHard" prefWidth="78.0" text="PT" />
+               </columns>
+            </TableView>
+            <TableView fx:id="tableMed" fixedCellSize="25.0" layoutX="810.0" layoutY="385.0" prefHeight="304.0" prefWidth="215.0" stylesheets="@../../../Style/tableView.css">
+               <columns>
+                  <TableColumn fx:id="playerMed" prefWidth="128.0" text="Player" />
+                  <TableColumn fx:id="ptMed" prefWidth="78.0" text="PT" />
+               </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <Button fx:id="backBTN" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBackButton" prefHeight="58.0" prefWidth="167.0" style="-fx-cursor: hand;" text="BACK" visible="false">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../../../image/backButton.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
